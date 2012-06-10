@@ -4,12 +4,10 @@ class Valgrind
   end
 
   def initialize(toRake, building_blocks, log)
-    log.error('valgrind am start')
     if not Valgrind.available?
       log.error('you should install valgrind or disable the valgrind plugin')
       return
     else
-      log.error('Valgrind ist super')
       toRake.create_filter_task_with_namespace(:valgrind)
     end
 
