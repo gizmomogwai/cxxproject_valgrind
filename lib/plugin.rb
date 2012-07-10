@@ -18,7 +18,8 @@ cxx_plugin do |cxxproject2rake, building_blocks, log|
     namespace 'valgrind' do
       desc "run executable #{executable} with valgrind"
       res = task name => executable do |t|
-        sh "valgrind --leak-check=full #{executable}"
+        args = ENV['args'] ? ' ' + ENV['args'] : ''
+        sh "valgrind --leak-check=full #{executable}#{args}"
       end
       res.type = Rake::Task::RUN
       res
