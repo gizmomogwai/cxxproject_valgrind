@@ -22,7 +22,7 @@ spec = Gem::Specification.new do |s|
   s.require_path = "lib"
   s.author = "christian koestlin"
   s.email = "christian.koestlin@gmail.com"
-  s.homepage = "https://github.com/marcmo/cxxproject_valgrind"
+  s.homepage = 'http://marcmo.github.com/cxxproject/'
   s.add_dependency("cxxproject")
 end
 
