@@ -4,7 +4,7 @@ require 'rubygems/package_task'
 desc "Default Task"
 task :default => [:install]
 
-PKG_VERSION = "1.0.4"
+PKG_VERSION = "1.0.5"
 PKG_FILES = FileList[
   "lib/**/*.rb",
   "Rakefile.rb",
