@@ -1,6 +1,6 @@
 cxx_plugin do |cxxproject2rake, building_blocks, log|
   def available?
-    return `which valgrind`
+    return `which valgrind` != ""
   end
 
   if not available?
