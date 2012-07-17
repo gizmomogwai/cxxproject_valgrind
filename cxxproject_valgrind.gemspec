@@ -1,8 +1,10 @@
-PKG_VERSION = "1.0.7"
+# -*- encoding: utf-8 -*-
+gem_name = 'cxxproject_valgrind'
+require File.expand_path("lib/#{gem_name}/version")
 
 spec = Gem::Specification.new do |s|
-  s.name = "cxxproject_valgrind"
-  s.version = PKG_VERSION
+  s.name = gem_name
+  s.version = CxxprojectValgrind::VERSION
   s.summary = "valgrind plugin for cxxproject."
   s.description = <<-EOF
     provides valgrind executable environment.
