@@ -9,7 +9,7 @@ spec = Gem::Specification.new do |s|
   s.description = <<-EOF
     provides valgrind executable environment.
   EOF
-  s.files = `git ls-files`.split($\)
+  s.files = Dir.glob("{bin,lib}/**/*") + %w(README.md)
   s.require_path = "lib"
   s.author = "christian koestlin"
   s.email = "christian.koestlin@gmail.com"
